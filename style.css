@@ -1,0 +1,79 @@
+html, body {
+  margin: 0;
+  padding: 0; 
+  background:rgb(132, 169,192);
+  text-align:center; 
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+h1{
+  text-align:left; 
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+  /* all sides have 100px */ 
+  margin: 100px; 
+  
+  /* top and bottom, left and right */ 
+  margin: 100px 0px;
+  
+  /* top, right, bottom, left */ 
+  margin: 100px 30px 20px 200px; 
+  
+  font-size: 60px; 
+  color: rgb(231,29, 54);
+  font-weight: normal;
+  font-style: italic; 
+  background: white; 
+/* padding adds space to the elements, eg: 30px in this case*/
+  padding: 30px; 
+}
+
+h1.copyheader {
+   color: rgb(0,255,255);
+  font-style: normal; 
+  background: rgb(0,0, 255);
+  
+}
+
+
+h2{
+  font-weight: normal;
+  color: rgb(255, 159, 28);
+  background: rgb(231,29, 54);
+  margin: 100px 200px; 
+  
+  
+}
+
+ul, ol {
+  list-style:none; 
+  margin:100px, 0px; 
+  text-align: left; 
+  
+}
+
+a{
+  text-decoration:none;
+  color: white; 
+  background: tomato;
+  width: 200px;
+  /*height: 100px; */
+  text-align: center;
+  border-radius: 20px;
+  padding:30px;
+  display: inline-block;
+  margin:20px, 0px; 
+  transition: all 0.5s; 
+}
+
+a:hover {
+  background: black; 
+  color: white; 
+  transform: rotate(180deg); 
+} 
+
+
+
