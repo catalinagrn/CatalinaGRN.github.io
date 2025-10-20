@@ -1,79 +1,82 @@
+*{
+  box-sizing:border-box;
+}
+
 html, body {
   margin: 0;
-  padding: 0; 
-  background:rgb(132, 169,192);
-  text-align:center; 
+  padding: 0;
+  height:100vh;
+  width:100vw;
+  -webkit-font-smoothing:antialiased;
+  background: rgb(13, 3, 161);
+  
   font-family: "Syne Mono", monospace;
   font-weight: 400;
-  font-style: normal; 
-}
-
-h1{
-  text-align:left; 
-  margin-top: 100px;
-  margin-bottom: 100px;
-  
-  /* all sides have 100px */ 
-  margin: 100px; 
-  
-  /* top and bottom, left and right */ 
-  margin: 100px 0px;
-  
-  /* top, right, bottom, left */ 
-  margin: 100px 30px 20px 200px; 
-  
-  font-size: 60px; 
-  color: rgb(231,29, 54);
-  font-weight: normal;
-  font-style: italic; 
-  background: white; 
-/* padding adds space to the elements, eg: 30px in this case*/
-  padding: 30px; 
-}
-
-h1.copyheader {
-   color: rgb(0,255,255);
-  font-style: normal; 
-  background: rgb(0,0, 255);
-  
+  font-style: normal;
 }
 
 
-h2{
-  font-weight: normal;
-  color: rgb(255, 159, 28);
-  background: rgb(231,29, 54);
-  margin: 100px 200px; 
+body {
   
+  transition:background 0.4s;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  color:rgb(238, 240, 242) ;
+}
+
+h1 {
+  color: #B00101;
+}
+
+ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:15px;
+  position:relative;
+  z-index:2;
+  flex-wrap:wrap;
+}
+
+li {
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+img {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  pointer-events:none;
+  z-index:-1;
+  opacity:0;  
+  transition: all 0.5s;
+  width:300px;
+}
+
+li:hover img{
+  opacity: 1; 
+  transform: translate(-50%, -50%) rotate(90deg);
   
 }
 
-ul, ol {
-  list-style:none; 
-  margin:100px, 0px; 
-  text-align: left; 
-  
+body.hovering li{
+  opacity:0;
 }
 
-a{
+a{ 
   text-decoration:none;
-  color: white; 
-  background: tomato;
-  width: 200px;
-  /*height: 100px; */
-  text-align: center;
-  border-radius: 20px;
-  padding:30px;
-  display: inline-block;
-  margin:20px, 0px; 
-  transition: all 0.5s; 
+  color:inherit;  
 }
 
-a:hover {
-  background: black; 
-  color: white; 
-  transform: rotate(180deg); 
-} 
-
-
-
+body.hovering li:hover {
+  opacity:1;
+  color: rgb(238,198,67);
+  height: 50vh
+}

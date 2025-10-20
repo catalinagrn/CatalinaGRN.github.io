@@ -1,0 +1,32 @@
+*{
+  box-sizing:border-box;
+}
+
+html, body {
+  -webkit-font-smoothing:antialiased;
+  background: rgb(13, 3, 161);
+  text-align:center;
+  margin:10px;
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+h1 {
+  color: #B00101;
+  text-align:center;
+  padding: 30px; 
+ 
+}
+
+h2 {
+  color: #EEC643;
+  text-align:left;
+  padding: 30px; 
+}
+
+h4 {
+  color: #EEF0F2;
+  text-align:left; 
+}
